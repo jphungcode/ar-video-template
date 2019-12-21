@@ -7,13 +7,13 @@ import VideoTemplate from "./components/templates/VideoTemplate.svelte"
 
 let isBrowserValid = true;
 let visibilityChange = null;
-let hidden = 'hidden';
 
 onMount(() => {
 	
-
+	let hidden 
     if (typeof document.hidden !== 'undefined') {
-      // Opera 12.10 and Firefox 18 and later support
+	  // Opera 12.10 and Firefox 18 and later support
+	  hidden = 'hidden';
       visibilityChange = 'visibilitychange'
     } else if (typeof document.msHidden !== 'undefined') {
       hidden = 'msHidden'
@@ -60,8 +60,8 @@ const videoParams = {
 const titleBlock = {
 	position:{
 		x: videoParams.position.x - videoParams.size.width/2,
-		y: videoParams.position.y,
-		z: videoParams.position.z - videoParams.size.height/2,
+		y: videoParams.position.y  + 0.01,
+		z: videoParams.position.z - videoParams.size.height,
 	},
 	rotation: {
 		x: -90,
@@ -84,8 +84,8 @@ const titleBlock = {
 const descriptionBlock = {
 	position:{
 		x: videoParams.position.x - videoParams.size.width/2,
-		y: videoParams.position.y,
-		z: videoParams.position.z + videoParams.size.height,
+		y: videoParams.position.y + 0.01,
+		z: videoParams.position.z + 2*videoParams.size.height,
 	},
 	rotation: {
 		x: -90,
