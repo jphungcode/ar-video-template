@@ -6,14 +6,14 @@ import ReloadVideo from "./utils/reloadVideo"
 import VideoTemplate from "./components/templates/VideoTemplate.svelte"
 
 let isBrowserValid = true;
-let visibilityChange = null;
+let visibilityChange
+let hidden
 
 onMount(() => {
 	
-	let hidden 
-    if (typeof document.hidden !== 'undefined') {
-	  // Opera 12.10 and Firefox 18 and later support
-	  hidden = 'hidden';
+   if (typeof document.hidden !== 'undefined') {
+      // Opera 12.10 and Firefox 18 and later support
+      hidden = 'hidden'
       visibilityChange = 'visibilitychange'
     } else if (typeof document.msHidden !== 'undefined') {
       hidden = 'msHidden'
@@ -21,15 +21,33 @@ onMount(() => {
     } else if (typeof document.webkitHidden !== 'undefined') {
       hidden = 'webkitHidden'
       visibilityChange = 'webkitvisibilitychange'
-	}
-	
+    }
     document.addEventListener(visibilityChange, handleVisibilityChange, false)
 
-    function handleVisibilityChange() {
-      ReloadVideo()
-    }
-
 })
+
+function handleVisibilityChange() {
+	reloadVideo()
+}
+
+function reloadVideo() {
+	var constraints = {
+	audio: false,
+	video: { facingMode: { exact: 'environment' } },
+	}
+
+	navigator.mediaDevices
+	.getUserMedia(constraints)
+	.then(function(stream) {
+		// console.log('getUserMedia completed successfully.')
+		const videoEl = document.getElementsByTagName('video')[0]
+
+		videoEl.srcObject = stream
+	})
+	.catch(function(error) {
+		console.log(error)
+	})
+}
 
 const patternURL = 'pattern-video-qr-code.patt'
 
@@ -111,7 +129,7 @@ const titleText = {
 	position:{
 		x: videoParams.position.x - videoParams.size.width/2,
 		y: videoParams.position.y + 0.01,
-		z: videoParams.position.z - videoParams.size.height/2 - titleBlock.size.height,
+		z: videoParams.position.z - videoParams.size.height/2 - titleBlock.size.height/2,
 	},
 	rotation: {
 		x: -90,
@@ -140,7 +158,7 @@ const descriptionText = {
 	position:{
 		x: videoParams.position.x - videoParams.size.width/2,
 		y: videoParams.position.y + 0.01,
-		z: videoParams.position.z  + videoParams.size.height/2 + titleBlock.size.height,
+		z: videoParams.position.z  + videoParams.size.height/2 + titleBlock.size.height/2,
 	},
 	rotation: {
 		x: -90,
@@ -153,7 +171,7 @@ const descriptionText = {
 	},
 	font: "https://cdn.aframe.io/fonts/Roboto-msdf.json",
 	color: "white",
-	wrapCount: "25", //controls how big the text is
+	wrapCount: "30", //controls how big the text is
 	xOffset: 0.1,
 	zOffset: 0.001,
 	height: 1,
