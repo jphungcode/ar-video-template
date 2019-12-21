@@ -9,23 +9,26 @@ let isBrowserValid = true;
 let visibility = null;
 
 
-// beforeUpdate(()=>{
-// 	isBrowserValid = CheckCompatibility()
-// 	let hidden;
-// 	let visibilityChange = "visibilitychange"
-// 	if(typeof document.hidden !== undefined){
-// 		hidden = "hidden"
-// 	} else if (typeof document.msHidden !== undefined){
-// 		hidden = "msHidden"
-// 		visibilityChange = "msvisibilitychange"
-// 	} else if (typeof document.webkitvisibilitychange !== undefined){
-// 		hidden = "webkitHidden"
-// 		visibilityChange = "webkitvisibilitychange"
-// 	}
+onMount(() => {
+    if (typeof document.hidden !== 'undefined') {
+      // Opera 12.10 and Firefox 18 and later support
+      hidden = 'hidden'
+      visibilityChange = 'visibilitychange'
+    } else if (typeof document.msHidden !== 'undefined') {
+      hidden = 'msHidden'
+      visibilityChange = 'msvisibilitychange'
+    } else if (typeof document.webkitHidden !== 'undefined') {
+      hidden = 'webkitHidden'
+      visibilityChange = 'webkitvisibilitychange'
+	}
+	
+    document.addEventListener(visibilityChange, handleVisibilityChange, false)
 
-// 	document.addEventListener(visibilityChange, ReloadVideo,false)
-// })
+    function handleVisibilityChange() {
+      ReloadVideo()
+    }
 
+})
 
 const patternURL = 'pattern-video-qr-code.patt'
 
@@ -163,8 +166,7 @@ const descriptionText = {
 
 
 	{#if isBrowserValid}
-	<a-scene embedded vr-mode-ui="enabled: false"
-  arjs="debugUIEnabled: false; patternRatio:0.8">
+	<a-scene embedded vr-mode-ui="enabled: false" arjs="debugUIEnabled: false; patternRatio:0.8">
 
 		<a-assets>
 			<video id={videoParams.videoId} crossorigin="anonymous" loop={videoParams.loop} webkit-playsinline playsinline src={videoParams.videoSrc}></video>
@@ -176,8 +178,8 @@ const descriptionText = {
 		</a-assets>
 
 		<a-marker preset="custom" type='pattern' url="pattern-video-qr-code.patt">
-			<a-box height="2" width="2" rotation="-90 0 0"></a-box>
-			<!-- <VideoTemplate {titleBlock} {videoParams} {descriptionBlock} {titleText} {descriptionText} /> -->
+			<!-- <a-box height="2" width="2" rotation="-90 0 0"></a-box> -->
+			<VideoTemplate {titleBlock} {videoParams} {descriptionBlock} {titleText} {descriptionText} />
 		</a-marker>
 		<a-entity camera></a-entity>
 	</a-scene>
