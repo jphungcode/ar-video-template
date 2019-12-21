@@ -60,8 +60,8 @@ const videoParams = {
 const titleBlock = {
 	position:{
 		x: videoParams.position.x - videoParams.size.width/2,
-		y: videoParams.position.y + videoParams.size.height/2,
-		z: videoParams.position.z,
+		y: videoParams.position.y,
+		z: videoParams.position.z - videoParams.size.height/2,
 	},
 	rotation: {
 		x: -90,
@@ -84,8 +84,8 @@ const titleBlock = {
 const descriptionBlock = {
 	position:{
 		x: videoParams.position.x - videoParams.size.width/2,
-		y: videoParams.position.y - videoParams.size.height,
-		z: videoParams.position.z,
+		y: videoParams.position.y,
+		z: videoParams.position.z + videoParams.size.height,
 	},
 	rotation: {
 		x: -90,
@@ -110,8 +110,8 @@ const titleText = {
 	padding: 0.1,
 	position:{
 		x: videoParams.position.x - videoParams.size.width/2,
-		y: videoParams.position.y + videoParams.size.height/2 + titleBlock.size.height/2,
-		z: videoParams.position.z,
+		y: videoParams.position.y,
+		z: videoParams.position.z - videoParams.size.height/2 + titleBlock.size.height/2,
 	},
 	rotation: {
 		x: -90,
@@ -139,8 +139,8 @@ const descriptionText = {
 	padding: 0.1,
 	position:{
 		x: videoParams.position.x - videoParams.size.width/2,
-		y: videoParams.position.y - videoParams.size.height/2 - titleBlock.size.height/2,
-		z: videoParams.position.z,
+		y: videoParams.position.y,
+		z: videoParams.position.z  + videoParams.size.height/2 - titleBlock.size.height/2,
 	},
 	rotation: {
 		x: -90,
