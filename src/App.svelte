@@ -111,7 +111,7 @@ const titleText = {
 	position:{
 		x: videoParams.position.x - videoParams.size.width/2,
 		y: videoParams.position.y + 0.01,
-		z: videoParams.position.z - videoParams.size.height/2 + titleBlock.size.height,
+		z: videoParams.position.z - videoParams.size.height/2 - titleBlock.size.height,
 	},
 	rotation: {
 		x: -90,
@@ -139,8 +139,8 @@ const descriptionText = {
 	padding: 0.1,
 	position:{
 		x: videoParams.position.x - videoParams.size.width/2,
-		y: videoParams.position.y,
-		z: videoParams.position.z  + videoParams.size.height/2 - titleBlock.size.height,
+		y: videoParams.position.y + 0.01,
+		z: videoParams.position.z  + videoParams.size.height/2 + titleBlock.size.height,
 	},
 	rotation: {
 		x: -90,
