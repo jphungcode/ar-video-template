@@ -6,13 +6,14 @@ import ReloadVideo from "./utils/reloadVideo"
 import VideoTemplate from "./components/templates/VideoTemplate.svelte"
 
 let isBrowserValid = true;
-let visibility = null;
-
+let visibilityChange = null;
+let hidden = 'hidden';
 
 onMount(() => {
+	
+
     if (typeof document.hidden !== 'undefined') {
       // Opera 12.10 and Firefox 18 and later support
-      hidden = 'hidden'
       visibilityChange = 'visibilitychange'
     } else if (typeof document.msHidden !== 'undefined') {
       hidden = 'msHidden'

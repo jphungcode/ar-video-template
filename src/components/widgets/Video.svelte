@@ -1,9 +1,9 @@
 <script>
 
 export let position = "";
-export let rotation = "0 0 0";
+export let rotation = "";
 export let videoId = "";
-export let clickAttribute = ""
+//export let clickAttribute = ""
 export let height = "1.5"
 export let width = "2"
 export let imageId = ""
@@ -12,12 +12,13 @@ let volumeToggle = false
 let volumeValue = 50;
 let isPlaying = false;
 
+
 AFRAME.registerComponent('video-controls',{
     init:function(){
         const video = this.el
         const videoHTML = document.getElementById('video_1')  
         this.isPlaying = isPlaying;
-        video.setAttribute(clickAttribute)
+        //video.setAttribute(clickAttribute)
 
         //video.addEventListener('click', this.handleClick)
         videoHTML.addEventListener('ended', function(){
