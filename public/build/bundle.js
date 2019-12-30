@@ -2667,24 +2667,24 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione iure illum mollitia dolorem, aliquam unde. Unde a, ex similique quis eaque est libero ut autem, blanditiis consequatur dicta! Amet, recusandae.";
     			attr_dev(path0, "d", "M405.6 69.6C360.7 24.7 301.1 0 237.6 0s-123.1 24.7-168 69.6S0 174.1 0 237.6s24.7 123.1 69.6 168 104.5 69.6 168 69.6 123.1-24.7 168-69.6 69.6-104.5 69.6-168-24.7-123.1-69.6-168zm-19.1 316.9c-39.8 39.8-92.7 61.7-148.9 61.7s-109.1-21.9-148.9-61.7c-82.1-82.1-82.1-215.7 0-297.8C128.5 48.9 181.4 27 237.6 27s109.1 21.9 148.9 61.7c82.1 82.1 82.1 215.7 0 297.8z");
-    			add_location(path0, file$5, 167, 93, 5181);
+    			add_location(path0, file$5, 167, 93, 5216);
     			attr_dev(path1, "d", "M342.3 132.9c-5.3-5.3-13.8-5.3-19.1 0l-85.6 85.6-85.6-85.6c-5.3-5.3-13.8-5.3-19.1 0-5.3 5.3-5.3 13.8 0 19.1l85.6 85.6-85.6 85.6c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4l85.6-85.6 85.6 85.6c2.6 2.6 6.1 4 9.5 4 3.5 0 6.9-1.3 9.5-4 5.3-5.3 5.3-13.8 0-19.1l-85.4-85.6 85.6-85.6c5.3-5.3 5.3-13.8 0-19.1z");
-    			add_location(path1, file$5, 167, 459, 5547);
+    			add_location(path1, file$5, 167, 459, 5582);
     			set_style(svg, "width", "100%");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 475.2 475.2");
-    			add_location(svg, file$5, 167, 8, 5096);
+    			add_location(svg, file$5, 167, 8, 5131);
     			attr_dev(span, "id", "close-btn");
     			attr_dev(span, "class", "svelte-lpeh7s");
-    			add_location(span, file$5, 166, 8, 5021);
-    			add_location(h2, file$5, 169, 8, 5909);
-    			add_location(p, file$5, 170, 8, 5945);
+    			add_location(span, file$5, 166, 8, 5056);
+    			add_location(h2, file$5, 169, 8, 5944);
+    			add_location(p, file$5, 170, 8, 5980);
     			attr_dev(div0, "id", "model-detail");
     			attr_dev(div0, "class", "svelte-lpeh7s");
-    			add_location(div0, file$5, 165, 4, 4988);
+    			add_location(div0, file$5, 165, 4, 5023);
     			attr_dev(div1, "id", "modal");
     			attr_dev(div1, "class", "svelte-lpeh7s");
-    			add_location(div1, file$5, 164, 0, 4921);
+    			add_location(div1, file$5, 164, 0, 4956);
 
     			dispose = [
     				listen_dev(span, "click", /*click_handler*/ ctx[4], false, false, false),
@@ -2788,24 +2788,25 @@ var app = (function () {
     			set_custom_element_data(a_text, "font", a_text_font_value = /*titleText*/ ctx[2].font);
     			set_custom_element_data(a_text, "align", a_text_align_value = /*titleText*/ ctx[2].align);
     			set_custom_element_data(a_text, "anchor", a_text_anchor_value = /*titleText*/ ctx[2].anchor);
-    			add_location(a_text, file$5, 146, 0, 3482);
+    			add_location(a_text, file$5, 146, 0, 3495);
     			set_custom_element_data(a_entity0, "light", "type: ambient; color: #EEE");
-    			add_location(a_entity0, file$5, 148, 0, 3985);
+    			add_location(a_entity0, file$5, 148, 0, 3998);
     			set_custom_element_data(a_entity1, "light", "type: directional; color: #FFF; intensity:0.5;");
     			set_custom_element_data(a_entity1, "position", "0 1 -4");
-    			add_location(a_entity1, file$5, 149, 0, 4043);
+    			add_location(a_entity1, file$5, 149, 0, 4056);
     			set_custom_element_data(a_entity2, "clickable", "");
     			set_custom_element_data(a_entity2, "model-click", "");
     			set_custom_element_data(a_entity2, "autoscale", "2");
     			set_custom_element_data(a_entity2, "gltf-model", "#model");
     			set_custom_element_data(a_entity2, "rotation", "-90 0 0");
-    			add_location(a_entity2, file$5, 156, 0, 4554);
+    			set_custom_element_data(a_entity2, "position", "0 0 0.5");
+    			add_location(a_entity2, file$5, 156, 0, 4567);
     			if (a_image.src !== (a_image_src_value = "./static/icons/rotating-circular-arrow.png")) set_custom_element_data(a_image, "src", a_image_src_value);
     			set_custom_element_data(a_image, "width", "0.4");
     			set_custom_element_data(a_image, "height", "0.4");
     			set_custom_element_data(a_image, "rotation", "-90 0 0");
-    			set_custom_element_data(a_image, "position", "0 0 1");
-    			add_location(a_image, file$5, 159, 0, 4657);
+    			set_custom_element_data(a_image, "position", "0 0 1.25");
+    			add_location(a_image, file$5, 159, 0, 4689);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2893,9 +2894,9 @@ var app = (function () {
     			this.rotationY = this.el.object3D.rotation.y * 180 / Math.PI;
     			this.rotationZ = this.el.object3D.rotation.z * 180 / Math.PI;
     			el.addEventListener("dblclick", this.handleClick);
-    			el.addEventListener("touchstart", this.handleTouchStart);
-    			el.addEventListener("touchmove", this.handleTouchMove);
-    			el.addEventListener("touchend", this.handleTouchEnd);
+    			window.addEventListener("touchstart", this.handleTouchStart);
+    			window.addEventListener("touchmove", this.handleTouchMove);
+    			window.addEventListener("touchend", this.handleTouchEnd);
     		},
     		handleClick(ev) {
     			ev.stopPropagation();
@@ -2953,7 +2954,7 @@ var app = (function () {
     	});
 
     	const titleBlock = {
-    		position: { x: -0.5, y: 0, z: -1.5 },
+    		position: { x: -0.5, y: 0, z: -1.25 },
     		rotation: { x: -90, y: 0, z: 0 },
     		size: { height: 0.2, width: 1 },
     		borderRadius: {
@@ -3027,18 +3028,125 @@ var app = (function () {
     }
 
     /* src\components\templates\ArticleTemplate.svelte generated by Svelte v3.16.4 */
+    const file$6 = "src\\components\\templates\\ArticleTemplate.svelte";
 
     function create_fragment$6(ctx) {
+    	let t0;
+    	let a_text0;
+    	let a_text0_wrap_count_value;
+    	let a_text0_value_value;
+    	let a_text0_rotation_value;
+    	let a_text0_width_value;
+    	let a_text0_height_value;
+    	let a_text0_color_value;
+    	let a_text0_position_value;
+    	let a_text0_z_offset_value;
+    	let a_text0_x_offset_value;
+    	let a_text0_letter_spacing_value;
+    	let a_text0_font_value;
+    	let a_text0_align_value;
+    	let a_text0_anchor_value;
+    	let t1;
+    	let a_image;
+    	let a_image_position_value;
+    	let a_image_rotation_value;
+    	let a_image_height_value;
+    	let a_image_width_value;
+    	let a_image_src_value;
+    	let t2;
+    	let a_text1;
+    	let a_text1_color_value;
+    	let a_text1_value_value;
+    	let a_text1_rotation_value;
+    	let a_text1_width_value;
+    	let a_text1_height_value;
+    	let a_text1_position_value;
+    	let a_text1_wrap_count_value;
+    	let a_text1_z_offset_value;
+    	let a_text1_x_offset_value;
+    	let a_text1_letter_spacing_value;
+    	let a_text1_font_value;
+    	let current;
+
+    	const roundedrect = new RoundedRect({
+    			props: { params: /*titleBlock*/ ctx[0] },
+    			$$inline: true
+    		});
+
     	const block = {
-    		c: noop,
+    		c: function create() {
+    			create_component(roundedrect.$$.fragment);
+    			t0 = space();
+    			a_text0 = element("a-text");
+    			t1 = space();
+    			a_image = element("a-image");
+    			t2 = space();
+    			a_text1 = element("a-text");
+    			set_custom_element_data(a_text0, "wrap-count", a_text0_wrap_count_value = /*titleText*/ ctx[1].wrapCount);
+    			set_custom_element_data(a_text0, "value", a_text0_value_value = /*titleText*/ ctx[1].text);
+    			set_custom_element_data(a_text0, "rotation", a_text0_rotation_value = `${/*titleText*/ ctx[1].rotation.x} ${/*titleText*/ ctx[1].rotation.y} ${/*titleText*/ ctx[1].rotation.z}`);
+    			set_custom_element_data(a_text0, "width", a_text0_width_value = /*titleText*/ ctx[1].size.width);
+    			set_custom_element_data(a_text0, "height", a_text0_height_value = /*titleText*/ ctx[1].size.height);
+    			set_custom_element_data(a_text0, "color", a_text0_color_value = /*titleText*/ ctx[1].color);
+    			set_custom_element_data(a_text0, "position", a_text0_position_value = `${/*titleText*/ ctx[1].position.x} ${/*titleText*/ ctx[1].position.y} ${/*titleText*/ ctx[1].position.z}`);
+    			set_custom_element_data(a_text0, "z-offset", a_text0_z_offset_value = /*titleText*/ ctx[1].zOffset);
+    			set_custom_element_data(a_text0, "x-offset", a_text0_x_offset_value = /*titleText*/ ctx[1].xOffset);
+    			set_custom_element_data(a_text0, "letter-spacing", a_text0_letter_spacing_value = /*titleText*/ ctx[1].letterSpacing);
+    			set_custom_element_data(a_text0, "font", a_text0_font_value = /*titleText*/ ctx[1].font);
+    			set_custom_element_data(a_text0, "align", a_text0_align_value = /*titleText*/ ctx[1].align);
+    			set_custom_element_data(a_text0, "anchor", a_text0_anchor_value = /*titleText*/ ctx[1].anchor);
+    			add_location(a_text0, file$6, 115, 0, 2211);
+    			set_custom_element_data(a_image, "position", a_image_position_value = `${/*imageParams*/ ctx[2].position.x} ${/*imageParams*/ ctx[2].position.y} ${/*imageParams*/ ctx[2].position.z}`);
+    			set_custom_element_data(a_image, "rotation", a_image_rotation_value = `${/*imageParams*/ ctx[2].rotation.x} ${/*imageParams*/ ctx[2].rotation.y} ${/*imageParams*/ ctx[2].rotation.z}`);
+    			set_custom_element_data(a_image, "height", a_image_height_value = /*imageParams*/ ctx[2].size.height);
+    			set_custom_element_data(a_image, "width", a_image_width_value = /*imageParams*/ ctx[2].size.width);
+    			if (a_image.src !== (a_image_src_value = /*imageParams*/ ctx[2].src)) set_custom_element_data(a_image, "src", a_image_src_value);
+    			add_location(a_image, file$6, 117, 0, 2714);
+    			set_custom_element_data(a_text1, "color", a_text1_color_value = /*descriptionText*/ ctx[3].color);
+    			set_custom_element_data(a_text1, "value", a_text1_value_value = /*descriptionText*/ ctx[3].text);
+    			set_custom_element_data(a_text1, "rotation", a_text1_rotation_value = `${/*descriptionText*/ ctx[3].rotation.x} ${/*descriptionText*/ ctx[3].rotation.y} ${/*descriptionText*/ ctx[3].rotation.z}`);
+    			set_custom_element_data(a_text1, "width", a_text1_width_value = /*descriptionText*/ ctx[3].size.width);
+    			set_custom_element_data(a_text1, "height", a_text1_height_value = /*descriptionText*/ ctx[3].size.height);
+    			set_custom_element_data(a_text1, "position", a_text1_position_value = `${/*descriptionText*/ ctx[3].position.x} ${/*descriptionText*/ ctx[3].position.y} ${/*descriptionText*/ ctx[3].position.z}`);
+    			set_custom_element_data(a_text1, "wrap-count", a_text1_wrap_count_value = /*descriptionText*/ ctx[3].wrapCount);
+    			set_custom_element_data(a_text1, "z-offset", a_text1_z_offset_value = /*descriptionText*/ ctx[3].zOffset);
+    			set_custom_element_data(a_text1, "x-offset", a_text1_x_offset_value = /*descriptionText*/ ctx[3].xOffset);
+    			set_custom_element_data(a_text1, "letter-spacing", a_text1_letter_spacing_value = /*descriptionText*/ ctx[3].letterSpacing);
+    			set_custom_element_data(a_text1, "font", a_text1_font_value = /*descriptionText*/ ctx[3].font);
+    			add_location(a_text1, file$6, 119, 0, 3005);
+    		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
-    		m: noop,
+    		m: function mount(target, anchor) {
+    			mount_component(roundedrect, target, anchor);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, a_text0, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, a_image, anchor);
+    			insert_dev(target, t2, anchor);
+    			insert_dev(target, a_text1, anchor);
+    			current = true;
+    		},
     		p: noop,
-    		i: noop,
-    		o: noop,
-    		d: noop
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(roundedrect.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(roundedrect.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(roundedrect, detaching);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(a_text0);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(a_image);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(a_text1);
+    		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
@@ -3052,10 +3160,92 @@ var app = (function () {
     	return block;
     }
 
+    function instance$6($$self) {
+    	const titleBlock = {
+    		position: { x: 0, y: 0, z: 0 },
+    		rotation: { x: -90, y: 0, z: 0 },
+    		size: { height: 2.5, width: 1.5 },
+    		borderRadius: {
+    			topLeft: 0.05,
+    			topRight: 0.05,
+    			bottomLeft: 0.05,
+    			bottomRight: 0.05
+    		},
+    		color: "#4AA5B9"
+    	};
+
+    	const titleText = {
+    		text: "10 ways to use Augmented Reality for creative marketing",
+    		padding: 0,
+    		position: {
+    			x: titleBlock.position.x,
+    			y: titleBlock.position.y + 0.05,
+    			z: titleBlock.position.z - titleBlock.size.height / 2
+    		},
+    		rotation: { x: -90, y: 0, z: 0 },
+    		size: {
+    			height: titleBlock.size.height,
+    			width: titleBlock.size.width - 0.2
+    		},
+    		font: "https://cdn.aframe.io/fonts/Roboto-msdf.json",
+    		color: "white",
+    		wrapCount: "20",
+    		xOffset: 0.1,
+    		zOffset: 0.001,
+    		height: 1,
+    		align: "center",
+    		baseline: "center",
+    		letterSpacing: 2,
+    		anchor: "left"
+    	};
+
+    	const imageParams = {
+    		position: { x: 0, y: 0, z: 0 },
+    		rotation: { x: -90, y: 0, z: 0 },
+    		size: { height: 1.5, width: 2 },
+    		src: "./static/images/chicken_salad.png"
+    	};
+
+    	const descriptionText = {
+    		text: "The rise of augmented reality applications has been supported by the consumer device behaviour and capable hardware specs that is able to deliver these experiences. With this trend, retailers are starting to adopt new ways to engage with consumers to convey brand messaging, nurture consumers and enhance call to actions.",
+    		padding: 0,
+    		position: {
+    			x: titleBlock.position.x,
+    			y: titleBlock.position.y + 0.05,
+    			z: titleBlock.position.z - titleBlock.size.height / 2
+    		},
+    		rotation: { x: -90, y: 0, z: 0 },
+    		size: {
+    			height: titleBlock.size.height,
+    			width: titleBlock.size.width - 0.2
+    		},
+    		font: "https://cdn.aframe.io/fonts/Roboto-msdf.json",
+    		color: "white",
+    		wrapCount: "35",
+    		xOffset: 0.1,
+    		zOffset: 0.001,
+    		height: 1,
+    		align: "center",
+    		baseline: "center",
+    		letterSpacing: 2,
+    		anchor: "left"
+    	};
+
+    	$$self.$capture_state = () => {
+    		return {};
+    	};
+
+    	$$self.$inject_state = $$props => {
+    		
+    	};
+
+    	return [titleBlock, titleText, imageParams, descriptionText];
+    }
+
     class ArticleTemplate extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$6, safe_not_equal, {});
+    		init(this, options, instance$6, create_fragment$6, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
@@ -3067,7 +3257,7 @@ var app = (function () {
     }
 
     /* src\App.svelte generated by Svelte v3.16.4 */
-    const file$6 = "src\\App.svelte";
+    const file$7 = "src\\App.svelte";
 
     // (263:1) {:else}
     function create_else_block$1(ctx) {
@@ -3077,7 +3267,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "Your Browser is not supported";
-    			add_location(p, file$6, 263, 2, 6459);
+    			add_location(p, file$7, 263, 2, 6459);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -3167,28 +3357,28 @@ var app = (function () {
     			attr_dev(video, "webkit-playsinline", "");
     			video.playsInline = true;
     			if (video.src !== (video_src_value = /*videoParams*/ ctx[4].videoSrc)) attr_dev(video, "src", video_src_value);
-    			add_location(video, file$6, 237, 3, 5410);
+    			add_location(video, file$7, 237, 3, 5410);
     			attr_dev(image, "id", image_id_value = /*videoParams*/ ctx[4].imageId);
     			if (image.src !== (image_src_value = /*videoParams*/ ctx[4].imageSrc)) attr_dev(image, "src", image_src_value);
-    			add_location(image, file$6, 238, 3, 5560);
+    			add_location(image, file$7, 238, 3, 5560);
     			set_custom_element_data(a_asset_item, "id", "model");
     			if (a_asset_item.src !== (a_asset_item_src_value = "./static/models/chair/jean_obj.glb")) set_custom_element_data(a_asset_item, "src", a_asset_item_src_value);
-    			add_location(a_asset_item, file$6, 239, 3, 5625);
-    			add_location(a_assets, file$6, 236, 2, 5396);
+    			add_location(a_asset_item, file$7, 239, 3, 5625);
+    			add_location(a_assets, file$7, 236, 2, 5396);
     			set_custom_element_data(a_marker, "marker-visible", "");
     			set_custom_element_data(a_marker, "preset", "custom");
     			set_custom_element_data(a_marker, "type", "pattern");
     			set_custom_element_data(a_marker, "url", /*patternUrl*/ ctx[3]);
-    			add_location(a_marker, file$6, 246, 2, 5900);
+    			add_location(a_marker, file$7, 246, 2, 5900);
     			set_custom_element_data(a_entity, "camera", "");
-    			add_location(a_entity, file$6, 260, 2, 6407);
+    			add_location(a_entity, file$7, 260, 2, 6407);
     			set_custom_element_data(a_scene, "embedded", "");
     			set_custom_element_data(a_scene, "vr-mode-ui", "enabled: false");
     			set_custom_element_data(a_scene, "arjs", "debugUIEnabled: false; patternRatio:0.8");
     			set_custom_element_data(a_scene, "emitevents", "true");
     			set_custom_element_data(a_scene, "cursor", "rayOrigin: mouse; fuse: true; fuseTimeout: 0;");
     			set_custom_element_data(a_scene, "raycaster", "objects: [clickable];");
-    			add_location(a_scene, file$6, 233, 1, 5183);
+    			add_location(a_scene, file$7, 233, 1, 5183);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a_scene, anchor);
@@ -3592,7 +3782,7 @@ var app = (function () {
     	});
     }
 
-    function instance$6($$self, $$props, $$invalidate) {
+    function instance$7($$self, $$props, $$invalidate) {
     	let isBrowserValid = true;
     	let visibilityChange;
     	let markerVisible = false;
@@ -3781,7 +3971,7 @@ var app = (function () {
     class App extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$6, create_fragment$7, safe_not_equal, {});
+    		init(this, options, instance$7, create_fragment$7, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
